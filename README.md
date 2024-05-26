@@ -2,7 +2,8 @@
 
 This repository contains the notes
 
-For the Icons we are using [React Icons :: Heroicons2](https://react-icons.github.io/react-icons/icons?name=hi2)
+## UI layout 
+Material components, for icons icons-materialnpm , and styled component.
 
 ## Available Scripts
 In the project directory, you can run:
