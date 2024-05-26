@@ -1,3 +1,19 @@
+# Customer Portal
+
+This repository contains the notes
+
+For the Icons we are using [React Icons :: Heroicons2](https://react-icons.github.io/react-icons/icons?name=hi2)
+
+## Available Scripts
+In the project directory, you can run:
+### `npm dev`
+Runs with vite.
+
+### `npm run newComponent`
+Launches a CLI to create a new component.
+### `npm run build && serve -s build`
+Builds the project and serves it.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
