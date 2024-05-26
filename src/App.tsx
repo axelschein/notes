@@ -1,16 +1,14 @@
 import React from 'react';
 import SendIcon from '@mui/icons-material/Send';
-
 import StyledButton from './shared/StyledButton'
-import './App.css'
+import TextInputField from './components/TextInputField';
 
 function App() {
 
   return (
     <>
-      <p>hola</p>
-     
-        <StyledButton isLoading={false} text="button" icon={<SendIcon />} onClick={()=> console.log("click")}/>
+      <TextInputField  isLoading={false} />
+      <StyledButton isLoading={false} text="button" icon={<SendIcon />} onClick={()=> console.log("click")}/>
         
     </>
   )
