@@ -12,11 +12,14 @@
     "newComponent": "node ./tools/component-cli.js"
   },
   "dependencies": {
+    "@mui/material": "^5.15.18",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "fs-extra": "^11.2.0",
     "inquirer": "^9.2.22",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "replace-in-file": "^7.1.0"
+    "replace-in-file": "^7.1.0",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
