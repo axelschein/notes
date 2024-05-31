@@ -1,5 +1,5 @@
 import { SectionProps } from './types';
-import { SectionRowWrapper, SectionTitle, SectionTitleWrapper, SectionSubTitleWrapper, SectionSubTitle, SectionWrapper } from './styles';
+import { SectionRowWrapper, SectionTitle, SectionTitleWrapper, SectionWrapper } from './styles';
 // import Divider from '../Divider';
 // import { HiOutlinePencilSquare } from 'react-icons/hi2';
 // import RebillButton from '../Button';
@@ -9,9 +9,9 @@ import { SectionTitleSkeleton } from './skeleton';
 const Section = ({
     isLoading = false,
     title,
-    subTitle,
     titleSize,
-    children
+    children,
+    width
 }: SectionProps): JSX.Element => {
     const renderSectionTitle = (
         <SectionTitleWrapper>
@@ -21,45 +21,21 @@ const Section = ({
         </SectionTitleWrapper>
     );
 
-    // const renderEditSection = (
-    //     editSectionTitle
-    //     && (
-    //         <SectionTitleWrapper>
-    //             <RebillButton
-    //                 icon={<HiOutlinePencilSquare size={18} />}
-    //                 label={editSectionTitle}
-    //                 onClick={() => editSectionCallback && editSectionCallback()}
-    //                 fontColor={DARK_GRAY}
-    //                 border="none"
-    //                 padding='0'
-    //                 fontWeight="400"
-    //             />
-    //         </SectionTitleWrapper>
-    //     )
-    // );
-
+    
     const renderChildren = (
         <>{children}</>
     );
 
-    return (<SectionWrapper>
-        <>
+    return (
+        <SectionWrapper width={width}>
             <SectionRowWrapper>
                 {isLoading ? <SectionTitleSkeleton /> : renderSectionTitle}
-                {/* {isLoading ? <SectionUpdateSkeleton /> : renderEditSection} */}
             </SectionRowWrapper>
-            {/* <Divider /> */}
-            <hr />
-            {subTitle && (
-                <SectionSubTitleWrapper>
-                    <SectionSubTitle>
-                        {subTitle}
-                    </SectionSubTitle>
-                </SectionSubTitleWrapper>
-            )}
+            < br />            
             {isLoading ? <SectionTitleSkeleton /> : renderChildren}
-        </>
-    </SectionWrapper>)
+            <br />            
+        </SectionWrapper>
+    )
 };
 
 export default Section;

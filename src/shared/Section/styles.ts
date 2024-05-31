@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { DARK_GRAY, PRIMARY_BLUE } from '../constants/colors';
-import { SectionTitleProps } from './types';
+import { SectionTitleProps, SectionWrapperProps } from './types';
 
-export const SectionWrapper = styled.section`
+export const SectionWrapper = styled.section<SectionWrapperProps>`
     margin-bottom: 31px;
+    width: ${({ width }) => `${width}%`};
+
 `;
 export const SectionRowWrapper = styled.div`
     display: flex;
