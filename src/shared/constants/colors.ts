@@ -1,0 +1,13 @@
+export const SUCCESS = '#1BA887';
+export const DANGER = '#E7485B';
+export const PRIMARY_BLUE = '#2580FF';
+export const PRIMARY_BLUE_LIGTH = '#24DCF2';
+export const PRIMARY_BLUE_DARK = '#033046';
+export const WARNING = '#FCC559';
+export const GRAY = '#F5F5F5';
+export const LIGHT_GRAY = '#AFAFAF';
+export const MED_GRAY = '#979CAE';
+export const GREY = '#D2D2D2';
+export const DARK_GRAY = '#777777';
+export const WHITE = '#FFF';
+export const BLACK = '#000';

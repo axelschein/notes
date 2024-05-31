@@ -1,15 +1,12 @@
 import React from 'react';
-import SendIcon from '@mui/icons-material/Send';
-import StyledButton from './shared/StyledButton'
-import TextInputField from './components/TextInputField';
+import Layout from './pages/Notes/Layout';
+
 
 function App() {
 
   return (
     <>
-      <TextInputField  isLoading={false} />
-      <StyledButton isLoading={false} text="button" icon={<SendIcon />} onClick={()=> console.log("click")}/>
-        
+        <Layout enableNoteCreator={true} />
     </>
   )
 }
