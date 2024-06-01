@@ -1,3 +1,7 @@
 import styled from 'styled-components';
 
-export const CreateWrapper = styled.div``;
+export const CreateWrapper = styled.div`
+    display: flex;
+    align-items: center;
+
+`;

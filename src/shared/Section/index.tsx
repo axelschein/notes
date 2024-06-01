@@ -1,9 +1,5 @@
 import { SectionProps } from './types';
 import { SectionRowWrapper, SectionTitle, SectionTitleWrapper, SectionWrapper } from './styles';
-// import Divider from '../Divider';
-// import { HiOutlinePencilSquare } from 'react-icons/hi2';
-// import RebillButton from '../Button';
-// import { DARK_GRAY } from '../constants/colors';
 import { SectionTitleSkeleton } from './skeleton';
 
 const Section = ({

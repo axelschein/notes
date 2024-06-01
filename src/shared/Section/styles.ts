@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { DARK_GRAY, PRIMARY_BLUE } from '../constants/colors';
 import { SectionTitleProps, SectionWrapperProps } from './types';
+import { FONT_FAMILY } from '../../shared/constants/fonts';
 
 export const SectionWrapper = styled.section<SectionWrapperProps>`
     margin-bottom: 31px;
@@ -26,6 +27,7 @@ export const SectionSubTitle = styled.h3`
     font-size: 18px;
     line-height: 30px;
     margin: 0;
+    font-family: ${FONT_FAMILY};
 `;
 export const SectionTitle = styled.h2<SectionTitleProps>`
     margin: 0;
@@ -35,6 +37,8 @@ export const SectionTitle = styled.h2<SectionTitleProps>`
     letter-spacing: 0.0025em;
     text-align: left;
     color: ${PRIMARY_BLUE};
+    font-family: ${FONT_FAMILY};
+
 `;
 export const SectionIcon = styled.div`
     margin: 6px 9.72px 0px -2px;
